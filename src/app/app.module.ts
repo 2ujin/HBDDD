@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { LetterComponent } from './pages/letter/letter.component';
 import { CameraComponent } from './pages/camera/camera.component';
+import { WebcamModule } from 'ngx-webcam';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CameraComponent } from './pages/camera/camera.component';
     BrowserModule,
     AppRouterModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    WebcamModule
   ],
   exports: [
     MatToolbarModule

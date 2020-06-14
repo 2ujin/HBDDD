@@ -9,12 +9,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { LetterComponent } from './pages/letter/letter.component';
+import { CameraComponent } from './pages/camera/camera.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    GiftComponent
+    GiftComponent,
+    LetterComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,

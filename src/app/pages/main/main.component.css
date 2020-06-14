@@ -15,5 +15,8 @@ mat-toolbar{
     padding: 10px;
     font-size: 16px;
     font-family: 'LotteMartHappy';
+}
+a{
+    text-decoration: none;
     color: rgb(31, 31, 31);
 }

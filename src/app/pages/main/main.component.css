@@ -1,0 +1,10 @@
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 40px;
+  }
+
+mat-toolbar{
+    background-color: #fdfbe1;;
+    padding: 60px;
+}

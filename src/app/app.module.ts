@@ -12,6 +12,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { LetterComponent } from './pages/letter/letter.component';
 import { CameraComponent } from './pages/camera/camera.component';
 import { WebcamModule } from 'ngx-webcam';
+import { MainImgComponent } from './pages/main-img/main-img.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WebcamModule } from 'ngx-webcam';
     MainComponent,
     GiftComponent,
     LetterComponent,
-    CameraComponent
+    CameraComponent,
+    MainImgComponent
   ],
   imports: [
     BrowserModule,

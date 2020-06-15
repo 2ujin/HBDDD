@@ -1,15 +1,21 @@
 <app-main></app-main>
 <div style="text-align:center">
-    <div>
+    <div style="margin-top: 40px;">
       <p>{{seconds}}</p>
       <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)">
       </webcam>
       <br/>
-      <button id="snapshotBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+      <button id="snapshotBtn" (click)="triggerSnapshot();">📸</button>
     </div>
-  </div>
-  <div class="snapshot" *ngIf="webcamImage">
-    <h2>Nice one!</h2>
-    <img [src]="webcamImage.imageAsDataUrl"/>
-  </div>
-  
+
+    <div style="text-align: center;">
+        <div *ngIf="webcamImage" style="background-color: white; width: 650px; height: 550px; padding: 13px; display: inline-block;">
+            <img [src]="webcamImage.imageAsDataUrl"/>
+            <div class="font">
+                2020.06.16 <br>
+                이소민 생일 기념 🎂
+            </div>
+        </div>
+    </div>
+</div>
+

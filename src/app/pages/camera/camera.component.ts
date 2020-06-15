@@ -25,9 +25,9 @@ export class CameraComponent  {
        setTimeout(()=>{
          this.trigger.next(); 
          this.seconds = null;
-       },2000)
-     },2000) 
-    },2000)
+       },1000)
+     },1000) 
+    },1000)
        
   }
 

@@ -1,0 +1,14 @@
+button{
+    font-size: 30px;
+    border: none;
+    background: none;
+}
+p{
+    font-family: 'LotteMartHappy';
+    font-size: 20px;
+}
+
+.font{
+    font-family: 'LotteMartHappy';
+    margin-top: 15px;
+}

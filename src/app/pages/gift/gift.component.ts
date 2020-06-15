@@ -9,7 +9,13 @@ export class GiftComponent implements OnInit {
 
   constructor() { }
 
+  modal: boolean = false
+
   ngOnInit(): void {
   }
 
+  img_click(num){
+    this.modal = true;
+    console.log(num)
+  }
 }

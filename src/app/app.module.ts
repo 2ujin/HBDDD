@@ -13,6 +13,9 @@ import { LetterComponent } from './pages/letter/letter.component';
 import { CameraComponent } from './pages/camera/camera.component';
 import { WebcamModule } from 'ngx-webcam';
 import { MainImgComponent } from './pages/main-img/main-img.component';
+import { HbdComponent } from './pages/hbd/hbd.component';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+ 
 
 @NgModule({
   declarations: [
@@ -21,14 +24,16 @@ import { MainImgComponent } from './pages/main-img/main-img.component';
     GiftComponent,
     LetterComponent,
     CameraComponent,
-    MainImgComponent
+    MainImgComponent,
+    HbdComponent
   ],
   imports: [
     BrowserModule,
     AppRouterModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    WebcamModule
+    WebcamModule,
+    NgxAudioPlayerModule
   ],
   exports: [
     MatToolbarModule

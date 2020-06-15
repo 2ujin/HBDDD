@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogOverviewExampleDialog } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-gift',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GiftComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   modal: boolean = false
 
@@ -17,5 +19,14 @@ export class GiftComponent implements OnInit {
   img_click(num){
     this.modal = true;
     console.log(num)
+    const dialogRef = this.dialog.open(DialogOverviewExampleDialog, {
+      width: '250px',
+      data: {num: num}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+
   }
 }

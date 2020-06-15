@@ -15,7 +15,7 @@ import { WebcamModule } from 'ngx-webcam';
 import { MainImgComponent } from './pages/main-img/main-img.component';
 import { HbdComponent } from './pages/hbd/hbd.component';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
- 
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { NgxAudioPlayerModule } from 'ngx-audio-player';
     BrowserAnimationsModule,
     MatToolbarModule,
     WebcamModule,
-    NgxAudioPlayerModule
+    NgxAudioPlayerModule,
+    MatDialogModule
   ],
   exports: [
     MatToolbarModule

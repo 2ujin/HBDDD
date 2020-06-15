@@ -1,0 +1,15 @@
+.item{
+    flex: 1;
+    text-align: center;
+}
+
+img{
+    width: 200px;
+}
+
+h4{
+    margin-top: 40px;
+    font-family: 'LotteMartHappy';
+    margin-top: 40px;
+    font-size: 25px;
+}
